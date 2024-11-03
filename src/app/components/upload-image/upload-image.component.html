@@ -1,0 +1,9 @@
+<div class="upload-form">
+    <label for="carId">Car ID:</label>
+    <input type="number" [(ngModel)]="carId" id="carId" placeholder="Enter Car ID" required />
+  
+    <label for="file">Choose Image:</label>
+    <input type="file" (change)="onFileSelected($event)" id="file" accept="image/*" required />
+  
+    <button (click)="uploadImage()">Upload Image</button>
+  </div>
